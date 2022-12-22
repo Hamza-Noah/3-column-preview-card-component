@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.cards .card {
+  padding: 30px;
+}
+.cards .card .icon {
+  margin-bottom: 30px;
+}
+.cards .card h2 {
+  margin-bottom: 20px;
+  color: hsl(0deg, 0%, 95%);
+  text-transform: uppercase;
+}
+.cards .card p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+}
+.cards .card button {
+  background-color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: bolder;
+}
+.cards .card:first-child {
+  background-color: hsl(31deg, 77%, 52%);
+}
+.cards .card:first-child button {
+  color: hsl(31deg, 77%, 52%);
+}
+.cards .card:nth-child(2) {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.cards .card:nth-child(2) button {
+  color: hsl(184deg, 100%, 22%);
+}
+.cards .card:last-child {
+  background-color: hsl(179deg, 100%, 13%);
+}
+.cards .card:last-child button {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media (min-width: 992px) {
+  .cards {
+    width: 80%;
+  }
+  .cards .card:first-child {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  .cards .card:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}/*# sourceMappingURL=styles.css.map */

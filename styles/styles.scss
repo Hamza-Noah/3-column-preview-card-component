@@ -1,0 +1,90 @@
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+$veryLightGray: hsl(0, 0%, 95%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 15px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+  .card {
+    padding: 30px;
+
+    .icon {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: $veryLightGray;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $transparentWhite;
+    }
+
+    button {
+      background-color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 15px;
+      font-weight: bolder;
+    }
+  }
+
+  .card:first-child {
+    background-color: $brightOrange;
+    button {
+      color: $brightOrange;
+    }
+  }
+
+  .card:nth-child(2) {
+    background-color: $darkCyan;
+    button {
+      color: $darkCyan;
+    }
+  }
+
+  .card:last-child {
+    background-color: $veryDarkCyan;
+    button {
+      color: $veryDarkCyan;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .cards {
+    width: 80%;
+
+    .card:first-child {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+
+    .card:last-child {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+    }
+  }
+}
