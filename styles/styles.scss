@@ -14,9 +14,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 15px;
+  background-color: #f2f2f2;
 }
 
 .cards {
@@ -27,10 +27,16 @@ body {
 
   .card {
     padding: 30px;
-
+  
     .icon {
       margin-bottom: 30px;
     }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+ 
 
     h2 {
       margin-bottom: 20px;
@@ -46,7 +52,7 @@ body {
       background-color: white;
       border: none;
       padding: 15px 30px;
-      border-radius: 15px;
+      border-radius: 25px;
       font-weight: bolder;
     }
   }
@@ -73,9 +79,34 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
+  body {
+    padding: 50px 20px;
+  }
+
   .cards {
-    width: 80%;
+    flex-wrap: wrap;
+    .card {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .cards {
+    width: 60%;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.7;
+    }
 
     .card:first-child {
       border-top-left-radius: 12px;

@@ -8,9 +8,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 15px;
+  background-color: #f2f2f2;
 }
 
 .cards {
@@ -25,6 +25,9 @@ body {
 .cards .card .icon {
   margin-bottom: 30px;
 }
+.cards .card p {
+  margin-bottom: 30px;
+}
 .cards .card h2 {
   margin-bottom: 20px;
   color: hsl(0deg, 0%, 95%);
@@ -37,7 +40,7 @@ body {
   background-color: white;
   border: none;
   padding: 15px 30px;
-  border-radius: 15px;
+  border-radius: 25px;
   font-weight: bolder;
 }
 .cards .card:first-child {
@@ -59,9 +62,29 @@ body {
   color: hsl(179deg, 100%, 13%);
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
+  body {
+    padding: 50px 20px;
+  }
   .cards {
-    width: 80%;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    min-height: 100vh;
+  }
+  .cards {
+    width: 60%;
+  }
+  .cards h2 {
+    font-size: 2rem;
+  }
+  .cards p {
+    line-height: 1.7;
   }
   .cards .card:first-child {
     border-top-left-radius: 12px;
