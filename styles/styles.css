@@ -55,22 +55,22 @@ body {
   border-radius: 25px;
   font-weight: bolder;
 }
-.cards .card:first-child {
+.cards .card:first-of-type {
   background-color: hsl(31deg, 77%, 52%);
 }
-.cards .card:first-child button {
+.cards .card:first-of-type button {
   color: hsl(31deg, 77%, 52%);
 }
-.cards .card:nth-child(2) {
+.cards .card:nth-of-type(2) {
   background-color: hsl(184deg, 100%, 22%);
 }
-.cards .card:nth-child(2) button {
+.cards .card:nth-of-type(2) button {
   color: hsl(184deg, 100%, 22%);
 }
-.cards .card:last-child {
+.cards .card:last-of-type {
   background-color: hsl(179deg, 100%, 13%);
 }
-.cards .card:last-child button {
+.cards .card:last-of-type button {
   color: hsl(179deg, 100%, 13%);
 }
 
@@ -96,7 +96,7 @@ body {
     font-size: 2rem;
   }
   .cards p {
-    line-height: 1.7;
+    line-height: 2;
   }
   .cards .card:first-child {
     border-top-left-radius: 12px;

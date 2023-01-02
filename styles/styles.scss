@@ -68,21 +68,21 @@ body {
     }
   }
 
-  .card:first-child {
+  .card:first-of-type {
     background-color: $brightOrange;
     button {
       color: $brightOrange;
     }
   }
 
-  .card:nth-child(2) {
+  .card:nth-of-type(2) {
     background-color: $darkCyan;
     button {
       color: $darkCyan;
     }
   }
 
-  .card:last-child {
+  .card:last-of-type {
     background-color: $veryDarkCyan;
     button {
       color: $veryDarkCyan;
@@ -116,7 +116,7 @@ body {
     }
 
     p {
-      line-height: 1.7;
+      line-height: 2;
     }
 
     .card:first-child {
