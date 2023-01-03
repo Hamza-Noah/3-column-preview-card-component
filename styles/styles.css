@@ -28,8 +28,7 @@ body {
 .cards {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100px;
+  align-items: stretch;
 }
 .cards .card {
   padding: 30px;
