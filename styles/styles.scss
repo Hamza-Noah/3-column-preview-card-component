@@ -50,9 +50,14 @@ body {
     }
 
     h2 {
+      font-size: 2rem;
       margin-bottom: 20px;
       color: $veryLightGray;
       text-transform: uppercase;
+      font-family: 'Big Shoulders Display', cursive;
+      letter-spacing: 1px;
+      font-weight: 600;
+
     }
 
     p {

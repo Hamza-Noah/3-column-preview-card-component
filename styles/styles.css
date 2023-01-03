@@ -41,9 +41,13 @@ body {
   margin-bottom: 30px;
 }
 .cards .card h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
   color: hsl(0deg, 0%, 95%);
   text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 .cards .card p {
   color: hsla(0deg, 0%, 100%, 0.75);
